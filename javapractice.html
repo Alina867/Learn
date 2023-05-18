@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1">Alina Mumtaz</p>
+    <!-- Write a JavaScript program to compare two objects to determine if the first one contains equivalent property values to the second one -->
+    <!-- <script>
+            var car = {
+        type:"volve",
+        model:500,
+        // result :"white"
+    }
+            var car1= {
+        type:"volve",
+        model:500,
+        // prices:"balck"
+    }
+    function check(car,car1){
+        for(key in car){
+            if(car[key] !== car1[key])
+            {
+                return false;
+            }
+        }
+            return true;
+    }
+
+    document.getElementById("demo").innerHTML = check(car,car1);
+    
+</script> -->
+    <!-- <script>
+    // Write a JavaScript function to  get the number of occurrences of each letter in specified string.
+    var string = prompt("enter string:  ");
+    var letter = prompt("enter letter:  ");
+    var result = check(string,letter);
+    document.getElementById("demo").innerHTML = letter + " occur " + result +" times in " + string;
+
+    function check(str,lett){
+         let count = 0;
+         for(let i=0; i<str.length; i++){
+            if(str.charAt(i)== letter){
+                count = count+1;
+            }
+         }
+         return count;
+    }    
+
+  </script> -->
+    <!-- <script>
+        // Write a JavaScript program to find duplicate values in a JavaScript array.
+        let array = [3, 5, 6, 7, 3, 9, 9, 7, 7];
+        let index = 0, newarr = [];
+        const length = array.length;
+        function findDuplicate(arr) {
+            for (let i = 0; i < length - 1; i++) {
+                for (let j = i+1; j < length; j++) {
+                    if (arr[i] === arr[j]) {
+                        newarr[index] = arr[i];
+                        index++;
+
+                    }
+                }
+            }
+            return newarr;
+        }
+
+        document.getElementById("demo").innerHTML = findDuplicate(array);
+    </script> -->
+    <script>
+        // Write a JavaScript program to set the background color of a paragraph
+        document.getElementById("demo1").style.backgroundColor = "red";
+
+    </script>
+</body>
+
+</html>

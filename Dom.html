@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <form id="frm1" action="/action_page.php">
+        First name: <input type="text" name="fname" value="Donald"><br>
+        Last name: <input type="text" name="lname" value="Duck"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      
+      <p>These are the values of each element in the form:</p>
+      
+      <p id="demo"></p>
+      <script>
+        const x = document.forms["frm1"];
+        let text = "";
+        for(let i=0; i<x.length; i++){
+            text = text+ x[i].value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+      </script> -->
+    <!-- 1. Use the getElementsByTagName method to find the <p> element, and change its text to "Good Job!". -->
+    <!-- <p id="demo">Alina</p>
+      <p id="demo">Alina A</p>
+      <p id="demo">Alina Mumaz</p>
+      <script>
+        let x = document.getElementsByTagName("p")[1].innerHTML = "Hello World";
+        let y = document.getElementsByTagName("p")[2].innerHTML = document.title;
+      -->
+<!-- 
+    <p>This is a p element</p>
+
+    <p>This is also a p element.</p>
+
+    <p>This is also a p element - Click the button to change the background color of all p elements in this document.
+    </p>
+
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        let x= document.getElementsByTagName("p");
+        // x[0].style.backgroundColor = "red";
+        for(let i=0;i<x.length;i++){
+            x[i].style.backgroundColor = "red";
+        }
+    </script> -->
+    <div id="demo">
+        <p id="para">Hello</p>
+    </div>
+    <script>
+        let x = document.createElement("p");
+        let y = document.createTextNode("Alina");
+        x.appendChild(y);
+        document.getElementById("demo").appendChild(x);
+       let para =  document.getElementById("para");
+        // document.getElementById("demo").removeChild(x);
+        // document.getElementById("demo").replaceChild(x, para);
+        
+
+    </script>
+
+</body>
+
+</html>

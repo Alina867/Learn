@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button onclick="myFunction()">click</button> -->
+    <!-- <form>
+        <input type="button" onclick="isConfirmed()" value="Want to confirm ?" />     </form> -->
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const days = ["sun","monday","tuesday","wed","Thursday","fri","sat"];
+         let d = new Date();
+         let result = days[d.getDay()];
+         document.getElementById("demo").innerHTML = "Today is : " + result;
+         let hours = d.getHours();
+         let min = d.getMinutes();
+         let sec = d.getSeconds();
+         if(hours > 12){
+            hours = hours - 12;
+         }
+         else{
+                hours;
+         }
+         if(hours > 12){
+            var prepand = 'PM';
+        }
+        else{
+           
+            var prepand = 'AM';
+         }
+         if(hours===0 && prepand==='PM'&& min=== 0&& sec ===0){
+             hours = 12;
+             prepand ='noon';
+         }else{
+            hours = 12;
+            prepand = 'PM';
+         }
+         
+         var prepand
+         document.getElementById("demo1").innerHTML = "current Time is: " + hours + " " + prepand + ": " +min+ ": " + sec;
+
+
+
+    </script>
+</body>
+
+</html>

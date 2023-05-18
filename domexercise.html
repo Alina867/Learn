@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Prctaice</title>
+</head>
+<body>
+    <p id="demo"></p>
+   <script>
+        // . Use the DOM to find and display the document's title
+        document.getElementById("demo").innerHTML = document.title;
+        </script>
+    
+        <!--  Use the HTML DOM to hide the <p> element. -->
+            <p id="demo1">Alina</p>
+            <script>
+                document.getElementById("demo1").style.display = "none";
+            </script>
+            <!-- Use the HTML DOM to change the text size of <p> to 40 pixels. -->
+                <p id="demo2">Alina</p>
+                <script>
+                    
+                    document.getElementById("demo2").style.fontSize = "40px";
+                </script>
+                <!-- Write a JavaScript function to add rows to a table. -->
+                <button onclick="Row()">Add</button>
+                <table id="ro">
+                    <tr>
+                        <th>Name</th>
+                        <th>Name</th>
+                        <th>Name</th>
+                    </tr>
+                    <tr id="tr">
+                        <td>Alina</td>
+                        <td>Alina</td>
+                        <td>Alina</td>
+                    </tr>
+                </table>
+
+                <script>
+                   function Row(){
+                    let row = document.createElement("tr");
+                   let text =  document.createTextNode("Amal");
+                    row.appendChild(text);
+                    document.getElementById("ro").appendChild(row);
+                   }
+                </script>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!-- Write a JavScript program to remove items from a dropdown list. -->
+                
+                <button onclick="itRemove()">Remove</button>
+                <br>
+                <br>
+                <form>
+                    <select id="item">
+                        <option>car</option>
+                        <option>bike</option>
+                        <option>buss</option>
+                    </select>
+                </form>
+              
+                <br>
+               <!-- <p id="dem"></p> -->
+                <script>
+                   function itRemove(){
+                    // document.getElementById("dem").innerHTML = "Alina";
+                    var it =  document.getElementById("item");
+                    // it.remove[it.selectedIndex];
+                    it.remove[0];
+                   }
+                </script>
+             <!-- Write a JavaScript program to count and display the items of a dropdown list,
+             in an alert window. -->
+             <button onclick="myFunction()">Count</button>
+             <br>
+             <br>
+               <form>
+                    <select id="item">
+                        <option>car</option>
+                        <option>bike</option>
+                        <option>buss</option>
+                    </select>
+                </form>
+                <p id="show"></p>
+                <script>
+                    function myFunction(){
+                        var x= document.getElementById("item");
+                    var text1 = "list: ";
+                    for(let i=0; i<x.length; i++){
+                        text1 = text1+ x.option[i].text+ "<br>";
+                    }
+                    document.getElementById("show").innerHTML=text1;
+                    }
+                   
+                </script>
+
+
+
+
+
+
+
+</body>
+</html>

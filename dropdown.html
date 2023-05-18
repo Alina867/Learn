@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Write a JavaScript program to count and display the items of a dropdown list,
+             in an alert window. -->
+    <button onclick="myFunction()">Count</button>
+    <br>
+    <br>
+    <form>
+        <select id="item">
+            <option>car</option>
+            <option>bike</option>
+            <option>buss</option>
+        </select>
+    </form>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("item");
+            var text1 = "list: ";
+
+            var count = 0;
+            for (let i = 0; i < x.length; i++) {
+                text1 = text1 + x.options[i].text + "<br>";
+                count = count + 1;
+            }
+            document.getElementById("demo1").innerHTML = "total Option: " + count;
+            document.getElementById("demo").innerHTML = text1;
+        }
+
+    </script>
+
+
+    <h2>JavaScript Error Handling</h2>
+
+    <p>How to use <b>catch</b> to display an error.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        try {
+            var it =  document.getElementById("item");
+                    // it.remove[it.selectedIndex];                             
+
+        }
+        catch (err) {
+            document.getElementById("demo").innerHTML = err.message;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
